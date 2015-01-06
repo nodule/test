@@ -1,0 +1,16 @@
+{
+  "name": "Drop",
+  "ns": "test",
+  "description": "Drop",
+  "phrases": {
+    "active": "Dropping"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Input",
+        "type": "any"
+      }
+    }
+  }
+}

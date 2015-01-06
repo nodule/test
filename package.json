@@ -1,0 +1,21 @@
+{
+  "name": "chix-test",
+  "description": "Test Chiχ",
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "version": "0.0.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/test.git"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "scripts": {
+    "test": "chit -r"
+  },
+  "chix": {
+    "name": "irc",
+    "color": "rgb(136,0,35)"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "irc",
+  "description": "Test Chiχ",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/test.git"
+  },
+  "nodes": [
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Input",
+            "type": "any"
+          }
+        }
+      },
+      "phrases": {
+        "active": "Dropping"
+      },
+      "description": "Drop",
+      "ns": "test",
+      "name": "Drop",
+      "fn": "on.input.in = function() {\n  // nop\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Input",
+            "type": "any"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Out",
+            "type": "any"
+          }
+        }
+      },
+      "phrases": {
+        "active": "Repeating"
+      },
+      "description": "Repeat",
+      "ns": "test",
+      "name": "Repeat",
+      "fn": "on.input.in = function() {\n  output({out: data});\n};\n"
+    }
+  ],
+  "twigs": []
+}

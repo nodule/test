@@ -1,0 +1,5 @@
+ATTIC
+node_modules
+*.swp
+*.txt
+flowhub*

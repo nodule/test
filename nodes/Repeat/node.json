@@ -1,0 +1,22 @@
+{
+  "name": "Repeat",
+  "ns": "test",
+  "description": "Repeat",
+  "phrases": {
+    "active": "Repeating"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Input",
+        "type": "any"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Out",
+        "type": "any"
+      }
+    }
+  }
+}
