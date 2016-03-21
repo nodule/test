@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({out: $.in});
+  output({out: $.clone('in')});
 };
