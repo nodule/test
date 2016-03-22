@@ -11,16 +11,14 @@ module.exports = {
         title: "Input",
         type: "any",
         fn: function __IN__(data, x, source, state, input, output) {
-          var ret = function() {
-
+          var r = function() {
             output({
-              out: data
+              out: $.clone('in')
             });
-
-          }.call(this);;
+          }.call(this);
           return {
             state: state,
-            return: ret
+            return: r
           };
         }
       }

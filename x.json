@@ -1,7 +1,7 @@
 {
   "name": "test",
   "description": "Test Chiχ",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/nodule/test.git"
@@ -45,7 +45,7 @@
       "description": "Repeat",
       "ns": "test",
       "name": "Repeat",
-      "fn": "on.input.in = function() {\n  output({out: data});\n};\n"
+      "fn": "on.input.in = function() {\n  output({out: $.clone('in')});\n};\n"
     }
   ],
   "twigs": []
