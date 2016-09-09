@@ -8,6 +8,12 @@
   },
   "nodes": [
     {
+      "name": "Drop",
+      "ns": "test",
+      "description": "Drop",
+      "phrases": {
+        "active": "Dropping"
+      },
       "ports": {
         "input": {
           "in": {
@@ -16,15 +22,15 @@
           }
         }
       },
-      "phrases": {
-        "active": "Dropping"
-      },
-      "description": "Drop",
-      "ns": "test",
-      "name": "Drop",
       "fn": "on.input.in = function() {\n  // nop\n};\n"
     },
     {
+      "name": "Repeat",
+      "ns": "test",
+      "description": "Repeat",
+      "phrases": {
+        "active": "Repeating"
+      },
       "ports": {
         "input": {
           "in": {
@@ -39,14 +45,7 @@
           }
         }
       },
-      "phrases": {
-        "active": "Repeating"
-      },
-      "description": "Repeat",
-      "ns": "test",
-      "name": "Repeat",
       "fn": "on.input.in = function() {\n  output({out: $.clone('in')});\n};\n"
     }
-  ],
-  "twigs": []
+  ]
 }
