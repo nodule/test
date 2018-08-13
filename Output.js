@@ -1,9 +1,9 @@
 module.exports = {
-  name: "Repeat",
+  name: "Output",
   ns: "test",
-  description: "Repeat",
+  description: "Output",
   phrases: {
-    active: "Repeating"
+    active: "Output"
   },
   ports: {
     input: {
@@ -12,21 +12,13 @@ module.exports = {
         type: "any",
         fn: function __IN__(data, source, state, input, $, output) {
           var r = function() {
-            output({
-              out: $.clone('in')
-            });
+            console.log($.in)
           }.call(this);
           return {
             state: state,
             return: r
           };
         }
-      }
-    },
-    output: {
-      out: {
-        title: "Out",
-        type: "any"
       }
     }
   },

@@ -25,6 +25,23 @@
       "fn": "on.input.in = function() {\n  // nop\n};\n"
     },
     {
+      "name": "Output",
+      "ns": "test",
+      "description": "Output",
+      "phrases": {
+        "active": "Output"
+      },
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Input",
+            "type": "any"
+          }
+        }
+      },
+      "fn": "on.input.in = function() {\n  console.log($.in)\n};\n"
+    },
+    {
       "name": "Repeat",
       "ns": "test",
       "description": "Repeat",

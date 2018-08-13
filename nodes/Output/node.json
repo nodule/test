@@ -1,0 +1,16 @@
+{
+  "name": "Output",
+  "ns": "test",
+  "description": "Output",
+  "phrases": {
+    "active": "Output"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Input",
+        "type": "any"
+      }
+    }
+  }
+}
